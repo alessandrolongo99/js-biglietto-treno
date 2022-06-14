@@ -8,11 +8,8 @@ if (isNaN(km) || isNaN(age)) {
     let price = km * tax;
     if (age < 18) {
         price = price - ((price / 100) * 20);
-        console.log(`il prezzo e' di ${price.toFixed(2)} euro`);
     } else if (age > 65) {
         price = price - ((price / 100) * 40);
-        console.log(`il prezzo e' di ${price.toFixed(2)} euro`);
-    } else {
-        console.log(`il prezzo e' di ${price.toFixed(2)} euro`);
     }
+    console.log(`il prezzo e' di ${price.toFixed(2)} euro`);
 }
